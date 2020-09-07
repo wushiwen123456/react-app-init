@@ -1,0 +1,26 @@
+*,*::before,*::after{
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+}
+body{
+  font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arical,sans-serif;
+}
+a{
+  color: #333;
+  text-decoration: none;
+}
+.clear-fix::after{
+  clear: both;
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  visibility: hidden;
+}
+.clearfix{
+  zoom: 1;
+}
+.relative{
+  position: relative;
+}

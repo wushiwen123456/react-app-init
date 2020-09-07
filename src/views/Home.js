@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-
+import "./aaa.scss";
+import { Button } from "antd";
 class Home extends Component {
   constructor() {
     super();
@@ -7,7 +8,14 @@ class Home extends Component {
   }
 
   render() {
-    return <div>Home</div>;
+    return (
+     <div className="home">
+       <div className="home-con">
+       <h1>Hello world!</h1>
+       <Button>Welcome</Button>
+       </div>
+     </div>
+    );
   }
 }
 
